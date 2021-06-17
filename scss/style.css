@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", monospace;
+  height: 100vh;
+  background: beige;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.nav-item {
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-item1 {
+  background: white;
+}
+
+.nav-item2 {
+  background: #000;
+  color: white;
+}
+
+main {
+  display: flex;
+  padding: 0 1rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 5px;
+  font-size: 9rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.main-a {
+  position: relative;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 1rem;
+  background: #000;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  color: white;
+  margin-left: auto;
+}
+
+.main-item {
+  width: 33%;
+}
+
+.main-a::after {
+  content: url(/assets/arrow-right-solid.svg);
+  position: relative;
+  display: inline-block;
+  top: 0;
+  color: white;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+}
+
+.main-item3 {
+  align-self: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+footer::before {
+  content: url(../assets/arrow-down-solid.svg);
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+@media (max-width: 1362px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
